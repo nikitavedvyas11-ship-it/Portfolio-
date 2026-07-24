@@ -1,0 +1,359 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* * = selects all elements margin:0 Removes default outside spacing 
+padding:0 Removes default inside spacing
+box-sizing:border-box
+Padding & border width ko element ki total width ke andar include karta hai */
+/* BODY */
+body{
+    font-family: Arial, sans-serif;
+    /*Website font style*/
+    background-color: #0f172a;
+    /*Dark background color*/
+    color: white;
+    /*Text color*/
+    line-height: 1.6;
+    /*Space between text lines*/
+}
+/* NAVBAR */
+header{
+    width: 100%;
+    /*Full width*/
+    background-color: #111827;
+    /*Navbar background*/
+    padding: 20px 10%;
+    /*Top-Bottom = 20px Left-Right = 10%*/
+    position: sticky;
+    top: 0;
+    /*Navbar top pe sticky rahega*/
+}
+nav{
+    display: flex;
+    /*Flexbox start*/
+    justify-content: space-between;
+    /*Left-right spacing*/
+    align-items: center; /*Vertically center*/
+}
+.logo{
+    font-size: 32px;
+    color: #8b5cf6;
+    /*Purple logo color*/
+}
+nav ul{
+    display: flex;
+    /*List items side-by-side*/
+    list-style: none;
+    /*Removes bullets*/
+    gap: 30px;
+    /*Space between items*/
+}
+nav ul li a{
+    text-decoration: none;
+    /*Removes underline*/
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    /*Smooth hover effect*/
+}
+nav ul li a:hover{
+    color: #8b5cf6;
+    /*Purple on hover*/
+}
+/*HERO SECTION*/
+.hero{
+    display: flex;
+    /*Left-right layout*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+    min-height: 90vh;
+    /*Minimum screen height*/
+}
+/* LEFT SIDE */
+.hero-text{
+    max-width: 550px;
+    /*Maximum width*/
+}
+.hero-text h3{
+    font-size: 28px;
+    color: #8b5cf6;
+    margin-bottom: 10px;
+}
+.hero-text h1{
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+.hero-text h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: lightgray;
+}
+.hero-text p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+/* BUTTON CONTAINER */
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+/* BUTTON */
+/* BUTTON CONTAINER */
+.buttons{
+    display: flex;
+
+    gap: 20px;
+}
+/* COMMON BUTTON */
+
+.buttons button{
+
+    padding: 14px 30px;
+
+    border: none;
+
+    font-size: 17px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+
+    font-weight: bold;
+}
+
+
+/* FIRST BUTTON */
+
+.btn1{
+
+    background: linear-gradient(to right, #8b5cf6, #7c3aed);
+
+    color: white;
+
+    box-shadow: 0 0 20px rgba(139,92,246,0.5);
+}
+
+
+/* FIRST BUTTON HOVER */
+
+.btn1:hover{
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 0 30px rgba(139,92,246,0.9);
+}
+
+
+/* SECOND BUTTON */
+
+.btn2{
+
+    background: transparent;
+
+    border: 2px solid #8b5cf6;
+
+    color: white;
+}
+
+
+/* SECOND BUTTON HOVER */
+
+.btn2:hover{
+
+    background-color: #8b5cf6;
+
+    transform: scale(1.05);
+}
+
+/* RIGHT SIDE IMAGE */
+.hero-image img{
+    width: 350px;
+    border-radius: 50%; /*Circle image*/
+    border: 5px solid #8b5cf6;
+}
+/*  COMMON SECTION STYLING*/
+section{
+    padding: 80px 10%;
+}
+section h1{
+
+    font-size: 45px;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    color: #8b5cf6;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-box{
+
+    background-color: #111827;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-container{
+
+    display: grid;
+    /*Grid start*/
+    grid-template-columns: repeat(3, 1fr);
+    /*
+    3 equal columns
+    */
+
+    gap: 25px;
+}
+
+
+/* SKILL CARD */
+
+.skill-card{
+    background-color: #111827;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+.skill-card:hover{
+    transform: translateY(-10px); /*Moves upward*/
+    background-color: #8b5cf6;
+}
+/*  EDUCATION SECTION*/
+.education-card{
+    background-color: #111827;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+/* =========================
+   PROJECT SECTION
+========================= */
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+/* PROJECT CARD */
+.project-card{
+    background-color: #111827;
+    border-radius: 15px;
+    overflow: hidden;
+    /*Extra image hide*/
+    transition: 0.3s;
+}
+.project-card:hover{
+    transform: translateY(-10px);
+}
+.project-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    /*Proper image fit*/
+}
+.project-card h2{
+    padding: 20px;
+}
+.project-card p{
+    padding: 0 20px 20px;
+}
+.project-card button{
+    margin: 20px;
+    padding: 14px 30px;
+    border: none;
+    font-size: 17px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: bold;
+}
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact-box{
+    background-color: #111827;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+.contact-box p{
+    margin: 15px 0;
+}
+/* =========================
+   FOOTER
+========================= */
+footer{
+    background-color: #111827;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+/* =========================
+   MEDIA QUERY
+========================= */
+@media(max-width: 900px){
+    /*Screen width 900px se choti hogi tab ye chalega */
+    .hero{
+        flex-direction: column;
+        /*Left-right → up-down*/
+        text-align: center;
+        gap: 50px;
+    }
+    .buttons{
+        justify-content: center;
+    }
+    .skills-container{
+        grid-template-columns: 1fr;
+        /*Single column*/
+    }
+    .project-container{
+
+        grid-template-columns: 1fr;
+    }
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav ul{
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+    .hero-text h1{
+
+        font-size: 50px;
+    }
+    .hero-text h2{
+
+        font-size: 30px;
+    }
+    .hero-image img{
+
+        width: 250px;
+    }
+}
