@@ -26,6 +26,7 @@ header {
 
 nav {
     display: flex;
+    flex-direction:column;
     justify-content: space-between;
     align-items: center;
 }
@@ -36,6 +37,7 @@ nav {
 }
 
 nav ul {
+    flex-wrap:wrap;
     display: flex;
     list-style: none;
     gap: 28px;
@@ -438,20 +440,42 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .skills-container {
-        grid-template-columns: 1fr;
+    .hero{
+        padding:60px 5%;
     }
-
     .hero-text h1 {
-        font-size: 42px;
+        font-size: 40px;
     }
 
     .hero-text h2 {
-        font-size: 25px;
+        font-size: 24px;
     }
-
+    .buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+    .buttons button{
+        width:200px;
+    }
     .hero-image img {
-        width: 250px;
-        height: 250px;
+        width: 230px;
+        height: 230px;
+    }
+    section{
+        padding:60px 5%;
+    }
+     .skills-container {
+        grid-template-columns: 1fr;
+    }
+    .project-container{
+        grid-template-columns:1fr;
+    }
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+    nav ul {
+        max-width:250px;
+        justify-content: center;
+        row-gap:10px;
     }
 }
