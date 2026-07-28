@@ -3,18 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: Arial, sans-serif;
     background: #0b1220;
     color: white;
     line-height: 1.6;
 }
-
 header {
     width: 100%;
     background: #0f172a;
@@ -23,7 +20,26 @@ header {
     top: 0;
     z-index: 1000;
 }
-
+#topBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    width:50px;
+    height:50px;
+    border: radius 50%;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    transition:.3s;
+}
+#topBtn:hover{
+    background:#1d4ed8;
+    transform:scale(1.1);
+}
 nav {
     display: flex;
     flex-direction:column;
