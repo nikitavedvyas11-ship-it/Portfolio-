@@ -306,7 +306,7 @@ section h2::after {
     transform: translateY(-3px);
 }
 
-.contact-container {
+/* .contact-container {
     width: 100%;
     max-width: 850px;
     min-height: 235px;
@@ -397,6 +397,154 @@ section h2::after {
 .contact-detail p {
     margin-top: 2px;
     font-size: 12px;
+} */
+/* CONTACT SECTION */
+
+.contact{
+
+    padding:80px 10%;
+    background:#f8fafc;
+
+}
+
+.contact h2{
+
+    text-align:center;
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:50px;
+
+}
+
+.contact-container{
+
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+
+}
+
+/* FORM */
+
+.contact-form{
+
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border-color:#2563eb;
+
+}
+
+.contact-form button{
+
+    background:#2563eb;
+    color:white;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* CONTACT INFO */
+
+.contact-info{
+
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.contact-detail{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+    text-decoration:none;
+    color:#333;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+
+}
+
+.contact-detail:hover{
+
+    background:#2563eb;
+    color:white;
+    transform:translateX(8px);
+
+}
+
+.contact-detail i{
+
+    font-size:30px;
+
+}
+
+.contact-detail strong{
+
+    display:block;
+    font-size:18px;
+    margin-bottom:5px;
+
+}
+
+.contact-detail span{
+
+    font-size:15px;
+    color:#666;
+
+}
+
+.contact-detail:hover span{
+
+    color:white;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.contact-container{
+
+    flex-direction:column;
+
+}
+
 }
 
 footer {

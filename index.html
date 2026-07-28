@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -89,7 +91,8 @@
             <h2>Projects</h2>
             <div class="project-container">
                 <div class="project-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTxpNgnqsFdVZ8aUbeNJv9iXf4Spmlx40Ofg&s"alt="Portfolio website project">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTxpNgnqsFdVZ8aUbeNJv9iXf4Spmlx40Ofg&s"
+                        alt="Portfolio website project">
                     <h3>Portfolio Website</h3>
                     <p>A responsive personal portfolio website built using HTML and CSS.</p>
                     <button>View Project</button>
@@ -112,34 +115,39 @@
         <section id="contact" class="contact">
             <h2>Contact Me</h2>
             <div class="contact-container">
+                <!-- Contact Form -->
                 <form class="contact-form">
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <textarea placeholder="Your Message"></textarea>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
                     <button type="submit">Send Message</button>
                 </form>
+                <!-- Contact Information -->
                 <div class="contact-info">
-                    <div class="contact-detail">
+                    <!-- Email -->
+                    <a href="mailto:nikitavedvyas15@gmail.com" class="contact-detail">
                         <i class="fa-regular fa-envelope"></i>
                         <div>
-                            <strong>Email</strong>
-                            <p>nikx@gmail.com</p>
+                            <strong>Drop Me an Email</strong>
+                            <span>Let's Connect</span>
                         </div>
-                    </div>
-                    <div class="contact-detail">
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/nikita-sharma-481454327/" target="_blank"class="contact-detail">
                         <i class="fa-brands fa-linkedin"></i>
                         <div>
-                            <strong>LinkedIn</strong>
-                            <p>linkedin.com/in/nikx</p>
+                            <strong>Connect on LinkedIn</strong>
+                            <span>View My Profile</span>
                         </div>
-                    </div>
-                    <div class="contact-detail">
-                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <!-- GitHub -->
+                    <a href="https://github.com/nikitavedvyas11-ship-it" target="_blank" class="contact-detail">
+                        <i class="fa-brands fa-github"></i>
                         <div>
-                            <strong>Instagram</strong>
-                            <p>@nikx.dev</p>
+                            <strong>Explore My GitHub</strong>
+                            <span>See My Projects</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -150,4 +158,5 @@
     <button id="topBtn">⬆</button>
     <script src="script.js"></script>
 </body>
+
 </html>
