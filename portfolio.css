@@ -460,7 +460,7 @@ section h2::after {
     outline:none;
 }
 .contact-form input:focus,.contact-form textarea:focus{
-    border-color:#2563eb;
+    border:2px solid #2563eb;
 }
 .contact-form button{
     background:#2563eb;
@@ -474,6 +474,7 @@ section h2::after {
     transition:.3s;
 }
 .contact-form button:hover{
+    transform:scale(1.05);
     background:#1d4ed8;
 }
 /* CONTACT INFO */
