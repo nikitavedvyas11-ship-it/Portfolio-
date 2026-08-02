@@ -1,4 +1,4 @@
-# Nikita Sharma - Personal Portfolio
+# Nikita  - Personal Portfolio
 
 A responsive personal portfolio website built using HTML, CSS and JavaScript.
 
