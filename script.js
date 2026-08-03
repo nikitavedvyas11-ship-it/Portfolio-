@@ -53,3 +53,10 @@ form.addEventListener("submit",function(e){
     alert("Thank you! Your message has been submitted successfully.");
     form.reset();
 });
+
+//Menu Toogle
+const menuToggle=document.querySelector(".menu-toggle");
+const navMenu=document.querySelector("nav ul");
+menuToggle.addEventListener("click",()=>{
+    navMenu.classList.toggle("show");
+})
